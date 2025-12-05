@@ -1,7 +1,7 @@
 // ───────────────────────────────────────────
 // 1. Webhook URL (YOUR LINK INSERTED)
 // ───────────────────────────────────────────
-const webhookURL = "https://webhook.site/1c0a8376-69cf-4835-a658-0a3936ae8193";
+const webhookURL = "https://eojetr20yicdck2.m.pipedream.net";
 
 // ───────────────────────────────────────────
 // 2. Page Navigation
