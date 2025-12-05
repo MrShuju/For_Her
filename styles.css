@@ -1,0 +1,131 @@
+:root {
+  --text: #ffffff;
+  --bg-dark: #0f0f13;
+  --card-bg: rgba(255, 255, 255, 0.08);
+  --pink: #ff6ba8;
+  --pink-light: #ff9bcf;
+  --yes: #6be6a8;
+  --no: #f28b8b;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg-dark);
+  color: var(--text);
+  overflow-x: hidden;
+  padding: 20px;
+}
+
+#app {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page {
+  display: none;
+  text-align: center;
+}
+
+.page.active {
+  display: block;
+}
+
+/* Card */
+.card {
+  background: var(--card-bg);
+  padding: 25px;
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+  max-width: 650px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.small {
+  font-size: 20px;
+  color: #ddd;
+}
+
+.message {
+  font-size: 18px;
+  color: #f7f7f7;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 22px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  color: white;
+}
+
+.yes {
+  background-color: var(--yes);
+}
+
+.no {
+  background-color: var(--no);
+}
+
+.btn-row {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Petals */
+#petal-area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.petal {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: radial-gradient(circle, #ffbad2, #ff7fb2);
+  border-radius: 70% 30% 70% 30%;
+  opacity: 0.85;
+  animation: fall 10s linear infinite;
+}
+
+@keyframes fall {
+  0% { transform: translateY(-10vh) rotate(0deg); }
+  100% { transform: translateY(110vh) rotate(360deg); }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .card { padding: 18px; }
+  h1 { font-size: 28px; }
+  .message { font-size: 16px; }
+  .btn { width: 100%; }
+  .btn-row { flex-direction: column; }
+}

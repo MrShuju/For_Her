@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For My Love ❤️</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Petal Animation Area -->
+  <div id="petal-area"></div>
+
+  <main id="app">
+
+    <!-- PAGE 1: INTRO -->
+    <section id="page1" class="page active">
+      <div class="card">
+        <h1>Hello Kanda ❤️<br><span class="small">How are you?</span></h1>
+        <button class="btn" id="nextPage">Go to next page</button>
+      </div>
+    </section>
+
+    <!-- PAGE 2: QUESTION -->
+    <section id="page2" class="page">
+      <div class="card">
+        <p class="message">
+          Will you come with me on a date on <strong>23rd December</strong>?  
+          Make sure before you click anything, make up your mind properly.  
+          Once you click, I'll follow that. ❤️
+        </p>
+
+        <div class="btn-row">
+          <button class="btn yes" id="yesBtn">Yes I'll come</button>
+          <button class="btn no" id="noBtn">No I won't come</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 3: YES PAGE -->
+    <section id="yesPage" class="page">
+      <div class="card">
+        <h2>Thank You My Love ❤️</h2>
+        <p>I’ll be waiting for you on 23rd morning.</p>
+      </div>
+    </section>
+
+    <!-- PAGE 4: NO PAGE -->
+    <section id="noPage" class="page">
+      <div class="card">
+        <h2>Okay Fine ❤️</h2>
+        <p>
+          You have made up your mind.<br>
+          You’ll get your remaining gifts on 21st - 23rd.  
+          I’ll courier them to your address. 🎁
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
